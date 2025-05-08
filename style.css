@@ -1,0 +1,16 @@
+body {
+    background-color: rgb(31, 32, 32);
+}
+
+.announcment {
+    background-color: gray;
+    border: yellow 1px solid;
+    border-radius: 12px;
+    width: 90%;
+    height: 200px;
+}
+
+.credits {
+    width: 100px;
+    height: 100px;
+}
