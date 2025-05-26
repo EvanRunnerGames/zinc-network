@@ -9,12 +9,14 @@
 <body>
 
     <header>
-
+        <a class="network-text" href="index.html">RULES</a>
+        <a class="network-text selected-text" href="index.html">ZINC NETWORK</a>
+        <a class="network-text" href="index.html">STORE</a>
     </header>
 
     <div class="stats">
 
-        <div class="stat ip-stat">
+        <div class="stat ip-stat" id="copy-ip" onclick="showSuccessAndCopy()">
             <i class="fas fa-cube stat-icon"></i>
             <div class="stats-text-c">
                 <p class="stat-title">MC.ZINC-NETWORK.NET</p>
@@ -22,21 +24,43 @@
             </div>
         </div>
 
-        <div class="stat">
+        <div class="stat" id="discord">
             <i class="fab fa-discord stat-icon"></i>
-            <div class="stats-text-c">                
-                <p class="stat-title">JOIN OUR DISCORD SERVER</p>
-                <p class="stat-info">229 users online</p>                  
+            <div class="stats-text-c">
+                <p class="stat-title">JOIN OUR DISOCRD SERVER</p>
+                <p class="stat-info">249 players online</p>            
             </div>
         </div>
+
+
 
         <img src="media/bubbly.png" class="stats_img" id="stats_img" draggable="false">
         
         
         <canvas id="statsCanvas"></canvas>
     </div>
+
+    <div class="bupdate">
+        <div class="bupdate-user">
+            <img src="https://crafatar.com/avatars/d86de0e9db2d4acf9fefce9439660149" class="bupdate-pfp" draggable="false">
+            <div class="bupdate-info">
+                <p class="bupdate-title">Test Announcment YIPPE it works</p>
+                <p class="bupdate-uinfo">EvanRunnerDev <span class="bupdate-uinfodate"> • 5/26/2025</span></p>
+            </div>
+        </div>
+
+        <div class="bupdate-contents">
+            Bedwars plans to be realising soon along with a OB full file release... btw this entire thing is just a test announcment
+        </div>
+
+    </div>
+
         
-        <script src="bubbles.js"></script>
-        <script src="icon.js"></script>
+        <script src="javascript/bubbles.js"></script>
+        <script src="javascript/icon.js"></script>
+        <script src="javascript/discord.js"></script>
+        <script src="javascript/copyip.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
     </body>
 </html>
