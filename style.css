@@ -69,6 +69,25 @@ header {
     color: #b5b5b5;
 }
 
+.du_one-fff {
+    margin-top: 20px;
+    font-weight: bolder;
+    position: absolute;
+    right: 0;
+    background-color: transparent;
+    border: transparent 0px solid;
+    transform: translateX(-15px);
+    font-size: 14px !important;
+}
+
+.du_one-fff:hover {
+    cursor: crosshair;
+    color: transparent;
+    transform: translateY(1000px);
+    font-size: 100px !important;
+    transition: all ease-in-out 10s;
+}
+
 .bupdate-uinfodate {
     margin: 0;
     padding: 0;
