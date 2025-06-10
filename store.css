@@ -137,6 +137,15 @@ body {
     border-color: #f0ad4e; /* Orangish border */
 }
 
+.mvpd-rank-card:hover {
+    box-shadow: 0 0 15px 3px #5cb85c, 0 0 5px 1px #000;
+
+}
+
+.mvp-plus-plus-card:hover {
+    box-shadow: 0 0 15px 3px #f9a825, 0 0 5px 1px #000;
+}
+
 
 .rank-icon {
     width: 80px; /* Adjust size as needed */
