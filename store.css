@@ -52,6 +52,7 @@ body {
 
 .vip-rank-card {
     background-color: #2c2f33;
+    position: relative;
     border-radius: 8px;
     padding: 20px;
     width: calc(20% - 20px); /* Approximately 5 cards per row, accounting for gap */
@@ -63,6 +64,21 @@ body {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
     transition: transform 0.2s ease-in-out;
     border: 1px solid transparent; /* Default border */
+}
+
+.payment-info {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 0;
+    flex-direction: column;
+    margin-bottom: 35px;
+}
+
+.fller {
+    margin: 25px;
 }
 
 .vip-rank-card:hover {
