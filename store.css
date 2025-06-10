@@ -66,6 +66,20 @@ body {
     border: 1px solid transparent; /* Default border */
 }
 
+.rank-prefix {
+    height: 16.3px;
+    background-color: #110211;
+    color: #ffffff;
+    padding: 3px;
+    border: 2px solid #1f0148;
+    font-size: 12px;
+    font-weight: bold;
+    display: inline-block;
+    z-index: 10;
+}
+
+
+
 .payment-info {
     position: absolute;
     width: 100%;
