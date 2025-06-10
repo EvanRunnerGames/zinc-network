@@ -1,0 +1,304 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #2c2f33; /* Dark background similar to Discord/gaming themes */
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.containerOF {
+    margin-top: 40px;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px; /* Adjust as needed */
+    background-color: #23272a; /* Slightly lighter dark for the main container */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    overflow: hidden; /* Ensures rounded corners for children */
+}
+
+.rank-upgrades-header {
+    background-color: #36393f; /* Darker header background */
+    padding: 15px 0;
+    text-align: center;
+    border-bottom: 2px solid #5865f2; /* Hypixel blue accent */
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.rank-upgrades-text {
+    font-size: 1.5em;
+    font-weight: 700;
+    color: #ffffff;
+    letter-spacing: 2px;
+}
+
+.vip-ranks-section {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px;
+    gap: 20px;
+}
+
+.vip-rank-card {
+    background-color: #2c2f33;
+    border-radius: 8px;
+    padding: 20px;
+    width: calc(20% - 20px); /* Approximately 5 cards per row, accounting for gap */
+    box-sizing: border-box;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease-in-out;
+    border: 1px solid transparent; /* Default border */
+}
+
+.vip-rank-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Specific card styling based on image */
+.vip-rank-card:nth-child(1) { /* VIP */
+    border-color: #cccccc; /* Greyish border */
+}
+
+.vip-rank-card:nth-child(2) { /* VIP+ */
+    border-color: #f7dc6f; /* Goldish border */
+}
+
+.vip-rank-card:nth-child(3) { /* MVP */
+    border-color: #5cb85c; /* Greenish border */
+}
+
+.vip-rank-card:nth-child(4) { /* MVP+ */
+    border-color: #5bc0de; /* Bluish border */
+}
+
+.vip-rank-card:nth-child(5) { /* MVP++ */
+    border-color: #f0ad4e; /* Orangish border */
+}
+
+
+.rank-icon {
+    width: 80px; /* Adjust size as needed */
+    height: 80px;
+    margin-bottom: 15px;
+}
+
+.rank-title {
+    font-size: 1.3em;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #ffffff;
+}
+
+.rank-description {
+    font-size: 0.9em;
+    color: #b0b0b0;
+    margin-bottom: 20px;
+    min-height: 70px; /* Ensure consistent height for descriptions */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.price {
+    font-size: 1.6em;
+    font-weight: 700;
+    color: #7289da; /* Hypixel blue for price */
+    margin-bottom: 20px;
+}
+
+.buy-button, .godlen-purchase-button {
+    background-color: #7289da;
+    color: #ffffff;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: background-color 0.2s ease;
+}
+
+.buy-button:hover, .godlen-purchase-button:hover {
+    background-color: #5b6eac;
+}
+
+.godlen-purchase-button {
+    background-color: #f0ad4e; /* Orange color for learn more */
+}
+
+.godlen-purchase-button:hover {
+    background-color: #c97f25;
+}
+
+
+.features-table {
+    width: calc(100% - 40px); /* Account for padding */
+    margin: 20px auto;
+    border-collapse: separate; /* Allows for rounded corners */
+    border-spacing: 0; /* Remove space between cells for border-radius */
+    background-color: #36393f; /* Darker background for the table */
+    border-radius: 8px;
+    overflow: hidden; /* Important for border-radius on child elements */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.table-header {
+    display: grid;
+    grid-template-columns: 2fr repeat(5, 1fr); /* 2fr for feature name, 1fr for each rank */
+    background-color: #2c2f33; /* Even darker header for the table */
+    padding: 10px 0;
+    font-weight: 700;
+    text-align: center;
+    border-bottom: 1px solid #444;
+}
+
+.table-header .feature-name-col {
+    text-align: left;
+    padding-left: 20px;
+}
+
+.rank-col {
+    color: #7289da; /* Hypixel blue for rank names in table header */
+}
+
+.table-row {
+    display: grid;
+    grid-template-columns: 2fr repeat(5, 1fr);
+    padding: 12px 0;
+    border-bottom: 1px solid #444;
+    align-items: center;
+}
+
+.table-row:nth-child(even) {
+    background-color: #3e4147; /* Slightly different background for even rows */
+}
+
+.table-row:last-child {
+    border-bottom: none;
+}
+
+.feature-name {
+    text-align: left;
+    padding-left: 20px;
+    color: #b0b0b0;
+    font-size: 0.95em;
+}
+
+.feature-status {
+    text-align: center;
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 0.95em;
+}
+
+
+
+/* Styling for Checkmarks */
+.check-icon {
+    color: #8DC63F; /* A vibrant, slightly desaturated green */
+    width: 0.8em; /* Adjust size as needed */
+    height: 0.8em; /* Adjust size as needed */
+    vertical-align: middle;
+}
+
+/* Styling for X marks */
+.x-icon {
+    color: #808080; /* A medium, desaturated gray */
+    width: 0.8em; /* Adjust size as needed */
+    height: 0.8em; /* Adjust size as needed */
+    vertical-align: middle;
+}
+
+/* You might need to adjust the size of the SVG icons if they don't fit well */
+.check-icon,
+.x-icon {
+    width: 1em; /* Adjust as needed */
+    height: 1em; /* Adjust as needed */
+    vertical-align: -0.125em; /* Helps with vertical alignment in text */
+}
+
+.circle-icon {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border: 2px solid #f0ad4e; /* Orange circle */
+    border-radius: 50%;
+    background-color: transparent;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+    .vip-rank-card {
+        width: calc(33.33% - 20px); /* 3 cards per row */
+    }
+    .features-table {
+        font-size: 0.9em;
+    }
+}
+
+@media (max-width: 768px) {
+    .vip-rank-card {
+        width: calc(50% - 20px); /* 2 cards per row */
+    }
+    .table-header, .table-row {
+        grid-template-columns: 1.5fr repeat(5, 1fr); /* Adjust grid for smaller screens */
+    }
+    .feature-name, .table-header .feature-name-col {
+        padding-left: 10px;
+    }
+    .rank-upgrades-text {
+        font-size: 1.2em;
+    }
+}
+
+@media (max-width: 480px) {
+    .vip-rank-card {
+        width: 100%; /* 1 card per row */
+    }
+    .features-table {
+        display: block; /* Stack table content for very small screens */
+        border-radius: 0;
+        box-shadow: none;
+    }
+    .table-header, .table-row {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        border-bottom: 1px solid #444;
+        padding: 10px;
+    }
+    .table-header .feature-name-col, .feature-name {
+        width: 100%;
+        text-align: center;
+        padding: 5px 0;
+    }
+    .rank-col, .feature-status {
+        width: 100%;
+        padding: 5px 0;
+    }
+    .container {
+        border-radius: 0;
+        box-shadow: none;
+        padding: 0;
+    }
+    body {
+        padding: 0;
+    }
+}
